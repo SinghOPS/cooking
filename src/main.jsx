@@ -1,3 +1,4 @@
+// Updates in cooking recipe
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'

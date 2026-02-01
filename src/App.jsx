@@ -1,3 +1,4 @@
+// Updates in cooking recipe
 import { useState, useRef, useEffect } from 'react'
 import gsap from 'gsap'
 import './App.css'
