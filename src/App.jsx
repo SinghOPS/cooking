@@ -55,7 +55,8 @@ function App() {
     }
   }
 
-  const handleNoHover = () => {
+  const handleNoInteraction = (e) => {
+    e.preventDefault()
     const button = noButtonRef.current
     const container = containerRef.current
     const containerRect = container.getBoundingClientRect()
@@ -138,8 +139,9 @@ function App() {
             <button 
               ref={noButtonRef}
               className="btn no-btn"
-              onMouseEnter={handleNoHover}
-              onTouchStart={handleNoHover}
+              onMouseEnter={handleNoInteraction}
+              onTouchStart={handleNoInteraction}
+              onClick={handleNoInteraction}
             >
               No 😢
             </button>
